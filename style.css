@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    justify-content: center;
+    height: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #e94715;
+    text-decoration: none;
+}
+
+.menu-area a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #e94715;
+    height: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-area a:hover {
+    background: tomato;
+    color: #fff;
+}
+
+.menu-area ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-area li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-area li:hover .submenu-1>li {
+    display: block;
+    top: 0;
+}
+
+.submenu-1 li {
+    display: none;
+    position: relative;
+}
+
+.submenu-1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background: #ffe5dd;
+}
+
+.submenu-1 li:hover .submenu-2 li {
+    display: block;
+}
+
+.submenu-2 li {
+    display: none;
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 200px;
+}
