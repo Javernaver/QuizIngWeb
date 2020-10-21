@@ -49,6 +49,8 @@ h1 {
 .submenu-1 li {
     display: none;
     position: relative;
+    color: rgb(0, 0, 0);
+    background: #ffe5dd;
 }
 
 .submenu-1 {
@@ -62,6 +64,8 @@ h1 {
 
 .submenu-1 li:hover .submenu-2 li {
     display: block;
+    color: rgb(0, 0, 0);
+    background: #ffe5dd;
 }
 
 .submenu-2 li {
