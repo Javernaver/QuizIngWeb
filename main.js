@@ -1,7 +1,7 @@
 "use strict";
 var Quiz = /** @class */ (function () {
     function Quiz() {
-        var menu = document.getElementById("menu"); // leer el menu con todas las categorias
+        var menu = document.getElementById("menu"); // obtener el menu con todas las categorias en un get
         menu.addEventListener("click", function (e) {
             var esCat = e.target.nodeName === 'A'; // comprobar si el elemento es del tipo "A" para las categorias del menu
             if (!esCat) {
